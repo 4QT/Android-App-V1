@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Comment here"
+        android:textAppearance="@style/text_Medium" />
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/cancel" />
+
+    <EditText
+        android:id="@+id/edt_addcomment"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/img_cancel"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="top" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_addcomment"
+        android:layout_centerHorizontal="true"
+        android:text="Send" />
+
+</RelativeLayout>

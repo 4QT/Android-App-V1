@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For PO bill approve" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/red_rectan"
+                    android:text="New"
+                    android:textColor="#cc3300" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/lol"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                    android:background="@drawable/lol"
+                    android:layout_weight="1"
+                      android:layout_margin="5dp"
+                    android:text="Close" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                    android:background="@drawable/lol"
+                    android:layout_weight="1"
+                      android:layout_margin="5dp"
+                    android:text="Back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Project" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="Project"
+                android:layout_marginBottom="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10" 
+                android:hint="Vendor"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase code" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Purchase code" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp" >
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Go"
+                    android:background="@drawable/red_rectan"
+                    android:textColor="#cc3300"  />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="#E5E6E7" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="S. No." />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"/>
+               
+
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Purchase Code" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4T/PO160304/4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Purchase Date" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4Mar2016" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vendor’s Company" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Test" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Address" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Test" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Process" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preview" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preview" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bill" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Approval" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Approval" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Print"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_rectan"
+                    android:textColor="#cc3300"  />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Download" 
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_rectan"
+                    android:textColor="#cc3300" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

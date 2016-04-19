@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <RelativeLayout
+        android:id="@+id/rellay_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/red"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding8"
+            android:background="@drawable/ic_drawer"
+            android:scaleType="fitCenter"
+            android:textAppearance="@style/text_Small" />
+
+       <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding10"
+            android:text="Main Menu"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/white" />
+        
+     
+    </RelativeLayout>
+    
+    
+    <GridView
+        android:id="@+id/gridview1"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/rellay_custom_title"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relative_layout"
+     >
+     
+    
+    <LinearLayout
+        android:id="@+id/linlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/starting_view"
+            layout="@layout/starting_view_tabless" />
+
+        <TextView
+            android:id="@+id/txv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Navratri brings growth"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="A temple (from the Latin word templum) is a structure reserved for religious or spiritual activities such as prayer and sacrifice. Despite the specific set of meanings associated with the religion of the ancient Rome, the word has now become quite widely used to describe a house of worship for any number of religions and is even used for time periods prior to the Romans."
+            android:textAppearance="@style/text_Small"
+            android:textColor="@color/darkGrey" />
+    </LinearLayout>
+     </RelativeLayout>

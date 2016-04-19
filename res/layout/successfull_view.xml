@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rellay_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/red"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding8"
+            android:background="@drawable/ic_drawer"
+            android:scaleType="fitCenter"
+            android:textAppearance="@style/text_Small" />
+
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding10"
+            android:text="Followup"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rellay_custom_title" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_followup_nameofuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rajeev Gupta" />
+
+                <TextView
+                    android:id="@+id/txv_followup_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 Dec 2015, 2:30 PM" />
+
+                <TextView
+                    android:id="@+id/txv_followup_acres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99 Acres" />
+
+                <TextView
+                    android:id="@+id/txv_followup_lacs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18-25 Lacs" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interested in Detail" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/img_followup_call"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/call" />
+
+                <ImageView
+                    android:id="@+id/img_followup_sms"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/sms" />
+
+                <ImageView
+                    android:id="@+id/img_followup_email"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/email" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_followup_follwoup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Follow up"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_followup_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_followup_successfull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Successful"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_followup_dump"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dump"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/linaly_transf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Add Booking"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remarks" />
+
+                <EditText
+                    android:id="@+id/edt_transf_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ronded_color_rectangle"
+                    android:ems="10"
+                    android:hint="Enter your remarks"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+                        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_followup_save"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/full_bouton"
+                    android:text="Save"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_followup_reset"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/full_bouton"
+                    android:text="Reset"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

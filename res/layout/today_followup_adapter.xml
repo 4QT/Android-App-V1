@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/linlay_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/img_nextarrow"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txv_followup_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Name of the followup user"
+            android:textAppearance="@style/text_Large"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txv_followup_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txv_followup_name"
+            android:text="Date it was connected"
+            android:textAppearance="@style/text_Small"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txv_followup_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txv_followup_date"
+            android:text="Desciption of the fololowup users"
+            android:textAppearance="@style/text_Small"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linlay_actions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_followup_desc"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/img_followup_folloup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:paddingRight="20dp"
+                android:src="@drawable/followup"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/img_followup_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:paddingRight="20dp"
+                android:src="@drawable/call"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/img_followup_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:paddingRight="20dp"
+                android:src="@drawable/email"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/img_followup_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:src="@drawable/sms"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linlay_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay_actions"
+            android:gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txv_follwup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:paddingRight="20dp"
+                android:text="FollowUp"
+                android:textStyle="bold"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:paddingRight="20dp"
+                android:text="Call"
+                android:textStyle="bold"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:paddingRight="20dp"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txv_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:text="Sms"
+                android:textStyle="bold"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_nextarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:src="@drawable/ic_nextarrow" />
+
+</RelativeLayout>

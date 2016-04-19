@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/img_temple"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+   
+
+    <LinearLayout
+        android:id="@+id/linlay_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rellay_language"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="Profile"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/viewp"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="Services"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/viewser"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_specialdates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="Special Dates"
+                android:textAppearance="@style/text_Small"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/viewsp"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

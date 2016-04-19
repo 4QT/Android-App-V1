@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rellay_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/red"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding8"
+            android:background="@drawable/ic_drawer"
+            android:scaleType="fitCenter"
+            android:textAppearance="@style/text_Small" />
+
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding10"
+            android:text="Sms"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/white" />
+
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rellay_custom_title"
+        android:layout_margin="12dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+           
+
+            <TextView
+                android:id="@+id/txv_sms_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="5dp"
+                android:text="Mobile" />
+
+            <EditText
+                android:id="@+id/edt_sms_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="Mobile number here"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            
+
+            <EditText
+                android:id="@+id/edt_sms_message"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="Message"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_sms_send"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:text="SEND"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rellay_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/red"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding8"
+            android:background="@drawable/ic_drawer"
+            android:scaleType="fitCenter"
+            android:textAppearance="@style/text_Small" />
+
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding10"
+            android:text="Followup"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rellay_custom_title" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_followup_nameofuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rajeev Gupta" />
+
+                <TextView
+                    android:id="@+id/txv_followup_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 Dec 2015, 2:30 PM" />
+
+                <TextView
+                    android:id="@+id/txv_followup_acres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99 Acres" />
+
+                <TextView
+                    android:id="@+id/txv_followup_lacs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18-25 Lacs" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interested in Detail" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/img_followup_call"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/call" />
+
+                <ImageView
+                    android:id="@+id/img_followup_sms"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/sms" />
+
+                <ImageView
+                    android:id="@+id/img_followup_email"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/email" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_followup_follwoup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Follow up"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_followup_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_followup_successfull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Successful"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_followup_dump"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dump"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Response Type" />
+
+            <Spinner
+                android:id="@+id/spinner_responsetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="Source"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Response Type" />
+
+            <Spinner
+                android:id="@+id/spinner_subresponsetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="Source"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stage" />
+
+            <Spinner
+                android:id="@+id/spinner_stage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="Source"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/meeting_reschedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting Date &amp; Time" />
+
+                
+                
+                 <EditText
+                android:id="@+id/edt_followup_meeting_date"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="meeting date"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting Place:" />
+
+                 <EditText
+                android:id="@+id/edt_followup_meeting_place"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="meeting place"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting Address" />
+
+                <EditText
+                    android:id="@+id/edt_followup_meetingaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ronded_color_rectangle"
+                    android:ems="10"
+                    android:hint="Enter your address"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sitevisit_schedule_reschedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_sitevisit_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Site Visit Date &amp; Time" />
+
+                <EditText
+                    android:id="@+id/edt_sitevisitdate"
+                  android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ronded_color_rectangle"
+                    android:ems="10"
+                    android:hint="Enter site visit Date &amp; "
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txv_sitevisit_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sit Visit Address" />
+
+                <EditText
+                    android:id="@+id/edt_followup_sitevisit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ronded_color_rectangle"
+                    android:ems="10"
+                    android:hint="Enter site visit address"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout
+                android:id="@+id/sitvisit_done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_sitevisit_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SiteVisit duration" />
+
+                <EditText
+                    android:id="@+id/edt_followup_sitevisit_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ronded_color_rectangle"
+                    android:ems="10"
+                    android:hint="Site duration"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/meeting_done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_meeting_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting duration" />
+
+                <EditText
+                    android:id="@+id/edt_followup_meetingdone_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ronded_color_rectangle"
+                    android:ems="10"
+                    android:hint="meeting duration"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow up Date &amp; Time" />
+
+            <EditText
+                android:id="@+id/edt_followup_datetime"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="Follow up Date &amp; Time"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txv_dateofclosing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expected Date of Closing" />
+
+            <EditText
+                android:id="@+id/edt_followup_dataof_closing"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:hint="Expected Date of Closing"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks" />
+
+            <EditText
+                android:id="@+id/edt_follwup_entercomments"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ronded_color_rectangle"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="Enter Your Comments"
+                android:inputType="textMultiLine"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_followup_save"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/full_bouton"
+                    android:text="Save"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_followup_reset"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/full_bouton"
+                    android:text="Reset"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

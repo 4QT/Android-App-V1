@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/txv_messg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkGrey" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/lightGrey" />
+
+    <Button
+        android:id="@+id/btn_alert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text=""
+        android:padding="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
+</LinearLayout>

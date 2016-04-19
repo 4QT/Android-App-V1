@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rellay_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/red"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding8"
+            android:background="@drawable/ic_drawer"
+            android:scaleType="fitCenter"
+            android:textAppearance="@style/text_Small" />
+
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding10"
+            android:text="Call management"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btn_cm_call"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/call_96"
+            android:drawablePadding="@dimen/padding15"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding15"
+            android:text="Call"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/btn_cm_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/email_96"
+            android:drawablePadding="@dimen/padding15"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding15"
+            android:text="Email"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/btn_cm_sms"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/sms_96"
+            android:drawablePadding="@dimen/padding15"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding15"
+            android:text="Sms"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   
+    <RelativeLayout
+        android:id="@+id/relay_customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/padding15"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/top_profile" />
+
+        <TextView
+            android:id="@+id/btn_slider_maintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_profile"
+            android:layout_marginTop="1dp"
+            android:text="Clive Becker"
+            android:textAppearance="@style/text_Medium"
+            android:textColor="#bbb397" />
+
+      
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+             <TextView
+                android:id="@+id/btn_slider_home"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Home"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/home_st"
+                android:textColor="@color/red" />
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+            
+            <TextView
+                android:id="@+id/btn_slider_enquiryfollowup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Enquiry Followup"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/new_enquiry_followup_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_newenquiry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="New Enquiry"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/new_enquiry_followup_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_searchenquiry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Search Enquiry"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/search_enquiry_list"
+                android:textColor="@color/red"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_callmanagement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Call Management"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/call_management_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_enquirycalendar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:text="Enquiry Calendar"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/enquiry_calendar_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_unitstatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Unit Status"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/unit_status_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_approval"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Approval"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/approval_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_salesfunnel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Sales Funnel"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/sales_funnel_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_checkin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Check In"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/check_in_list"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_checkout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Check out"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/check_out_list"
+                android:textColor="@color/red" />
+            
+             <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_administration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Administration"
+                android:textAppearance="@style/text_Medium"
+               android:drawableLeft="@drawable/administration_list"
+                android:textColor="@color/red" />
+            
+             <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btn_slider_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/padding15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding10"
+                android:text="Logout"
+                android:textAppearance="@style/text_Medium"
+                android:drawableLeft="@drawable/logout"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
